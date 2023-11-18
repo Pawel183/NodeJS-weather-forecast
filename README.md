@@ -22,4 +22,5 @@
 
 Make sure to put `YOUR_API_KEY` in `private/openWeather_Key.txt` with your actual OpenWeatherMap API key.
 
-![Screenshot](/public/images/NodeJS Weather Forecast.png)
+## Screenshot
+![''](https://github.com/Pawel183/NodeJS-weather-forecast/blob/1dbfb1b1fbeddc597d0a0ec458b82215c9aabec6/public/images/NodeJS%20Weather%20Forecast.png)
