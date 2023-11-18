@@ -1,0 +1,41 @@
+<div class="left-current-weather">
+    <p class="blue-gradient-text" id="current-weather">Current Weather</p>
+    <p class="blue-gradient-text" id="city-name">
+        <%=locals.city%>
+    </p>
+    <div class="temp">
+        <img id="img-temp" src="images/<%=locals.days[0].weather[0].icon%>@2x.png">
+        <span class="blue-gradient-text" id="span-temp">
+            <%=locals.days[0].temp%>°
+        </span>
+    </div>
+    <p class="blue-gradient-text" id="description">
+        <%=locals.days[0].weather[0].description%>
+    </p>
+</div>
+<div class="right-current-weather">
+    <p id="feels-like">
+        <span class="blue-gradient-text">Feels like <%=locals.days[0].feelsLike%></span>°
+    </p>
+    <p id="max-min-temp">
+        ⬆️  
+        <span class="blue-gradient-text"><%=locals.days[0].tempMax%>°</span>
+        &nbsp; &nbsp; &nbsp; 
+        ⬇️  
+        <span class="blue-gradient-text"><%=locals.days[0].tempMin%>°</span>
+    </p>
+    <div class="">
+        <p>
+            💧
+            <span class="blue-gradient-text">Humidity <%=locals.days[0].humidity%> %</span>
+        </p>
+        <p>
+            💨
+            <span class="blue-gradient-text">Wind <%=locals.days[0].windSpeed%> m/s</span>
+        </p>
+        <p>
+            📈
+            <span class="blue-gradient-text">Pressure <%=locals.days[0].pressure%> hPa</span>
+        </p>
+    </div>
+</div>

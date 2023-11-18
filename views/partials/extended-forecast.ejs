@@ -1,0 +1,31 @@
+<div class="extended-forecast-text">
+    <p class="blue-gradient-text" id="extended-forecast-title">
+        Extended Forecast
+    </p>
+</div>
+<div class="extended-forecast">
+    <div class="">
+        <p class="blue-gradient-text next-days"><%=locals.days[1].weekday%></p>
+        <img src="images/<%=locals.days[1].weather[0].icon%>@2x.png">
+        <p class="blue-gradient-text description-next-days"><%=locals.days[1].weather[0].main%></p>
+        <p class="blue-gradient-text temp-next-days"><%=locals.days[1].tempMax%>°/<%=locals.days[1].tempMin%>°</p>
+    </div>
+    <div class="">
+        <p class="blue-gradient-text next-days"><%=locals.days[2].weekday%></p>
+        <img src="images/<%=locals.days[2].weather[0].icon%>@2x.png">
+        <p class="blue-gradient-text description-next-days"><%=locals.days[2].weather[0].main%></p>
+        <p class="blue-gradient-text temp-next-days"><%=locals.days[2].tempMax%>°/<%=locals.days[1].tempMin%>°</p>
+    </div>
+    <div class="">
+        <p class="blue-gradient-text next-days"><%=locals.days[3].weekday%></p>
+        <img src="images/<%=locals.days[3].weather[0].icon%>@2x.png">
+        <p class="blue-gradient-text description-next-days"><%=locals.days[3].weather[0].main%></p>
+        <p class="blue-gradient-text temp-next-days"><%=locals.days[3].tempMax%>°/<%=locals.days[1].tempMin%>°</p>
+    </div>
+    <div class="">
+        <p class="blue-gradient-text next-days"><%=locals.days[4].weekday%></p>
+        <img src="images/<%=locals.days[4].weather[0].icon%>@2x.png">
+        <p class="blue-gradient-text description-next-days"><%=locals.days[4].weather[0].main%></p>
+        <p class="blue-gradient-text temp-next-days"><%=locals.days[4].tempMax%>°/<%=locals.days[1].tempMin%>°</p>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container">
+    <div class="top-container">
+        <div class="header-div">
+            <h1 class="blue-gradient-text" id="title-text">
+                NodeJS Weather Forecast
+            </h1>
+            <a id="git-icon" href="https://github.com/Pawel183" target="_blank">
+                <img src="images/github.png" width="30px" height="30px"/>
+            </a>
+        </div>
+        <div class="address-bar">
+            <div class="bar">
+                <form class="search-form" action="/weather" method="POST">
+                    <div class="input-group">
+                        <button class="search-button" type="submit">
+                            <img src="images/search-icon.png" width="30px" height="30px"/>
+                        </button>
+                        <input class="search-input form-control" type="text" id="city" name="city" placeholder="City name">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% if(locals.days) {%>
+        <div class="bottom-container">
+            <%- include("partials/current-weather.ejs") %>
+            <%- include("partials/extended-forecast.ejs") %>
+        </div>
+    <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>
