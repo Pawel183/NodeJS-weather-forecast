@@ -21,3 +21,5 @@
 ## Configuration
 
 Make sure to put `YOUR_API_KEY` in `private/openWeather_Key.txt` with your actual OpenWeatherMap API key.
+
+![Screenshot](/public/images/NodeJS Weather Forecast.png)
